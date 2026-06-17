@@ -1,3 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nicholas Suntjens | Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #e6e6e6;
+    }
+
+    header {
+      background: #151515;
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      color: #aaa;
+      margin-top: 8px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #111;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    nav a {
+      color: #e6e6e6;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #4da3ff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      border-left: 4px solid #4da3ff;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .card {
+      background: #161616;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      border: 1px solid #2a2a2a;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: 1px solid #2a2a2a;
+    }
+
+    a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #4da3ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #2a2a2a;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
 <body>
 
 <header>
@@ -11,23 +136,7 @@
   <a href="#cad">CAD Projects</a>
 </nav>
 
-<style> 
-html {
-  scroll-behavior: smooth;
-}
-
-.card img {
-  width: 100%;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: 1px solid #2a2a2a;
-}
-
-h2 {
-  font-size: 28px;
-}
-  </style> 
-<!-- ========== TOP SUMMARY (MINIMAL SECTION) ========== -->
+<!-- ========== TOP SUMMARY ========== -->
 <section id="top">
   <h2>Overview</h2>
 
@@ -37,22 +146,22 @@ h2 {
     </p>
 
     <p>
-      Experience includes academic engineering projects, teamwork-based design work, and self-directed learning in CAD and programming.
+      Experience includes academic engineering projects, teamwork-based design work, and CAD-focused development.
     </p>
 
     <p>
-      Contact: <a href="mailto:suntjensnicholas@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/nicholas-suntjens-4928b6311" target="_blank">LinkedIn</a> |
-      Resume available below
+      Contact:
+      <a href="mailto:suntjensnicholas@gmail.com">Email</a> |
+      <a href="https://www.linkedin.com/in/nicholas-suntjens-4928b6311" target="_blank">LinkedIn</a>
     </p>
 
     <a class="btn" href="resume.pdf" target="_blank">View Resume</a>
   </div>
 </section>
 
-<!-- ========== GENERAL PROJECTS (MAIN FOCUS) ========== -->
+<!-- ========== PROJECTS ========== -->
 <section id="projects">
-  <h2 style="font-size: 30px;">Projects</h2>
+  <h2>Projects</h2>
 
   <div class="card">
     <h3>Project 1</h3>
@@ -69,31 +178,21 @@ h2 {
   </div>
 </section>
 
-<!-- ========== CAD PROJECTS (NEW EMPHASIS SECTION) ========== -->
+<!-- ========== CAD PROJECTS ========== -->
 <section id="cad">
-  <h2 style="font-size: 30px;">CAD Projects</h2>
+  <h2>CAD Projects</h2>
 
   <div class="card">
-    <h3>CAD Model – Mechanical Component</h3>
-
+    <h3>Mechanical Component Design</h3>
     <img src="images/cad1.png" alt="CAD Project 1">
-
-    <p>
-      Designed in SolidWorks / Fusion 360. Focus on parametric modeling, constraints, and manufacturability.
-    </p>
-
+    <p>SolidWorks / Fusion 360 design focusing on constraints and manufacturability.</p>
     <a href="images/cad1.png" target="_blank">View Full Image</a>
   </div>
 
   <div class="card">
-    <h3>Assembly Design – System Model</h3>
-
+    <h3>Assembly System Model</h3>
     <img src="images/cad2.png" alt="CAD Project 2">
-
-    <p>
-      Multi-part assembly demonstrating mechanical fit, motion constraints, and design iteration.
-    </p>
-
+    <p>Multi-part assembly demonstrating fit, motion, and design iteration.</p>
     <a href="images/cad2.png" target="_blank">View Full Image</a>
   </div>
 </section>
@@ -103,3 +202,4 @@ h2 {
 </footer>
 
 </body>
+</html>
