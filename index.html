@@ -1,31 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nicholas Suntjens | Portfolio</title>
+
   <style>
     body {
-      font-family: Arial;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #e6e6e6;
     }
-    h1 { color: #222; }
-    a { color: blue; }
+
+    header {
+      background: #151515;
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      color: #aaa;
+      margin-top: 8px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #111;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    nav a {
+      color: #e6e6e6;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #4da3ff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      border-left: 4px solid #4da3ff;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #161616;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      border: 1px solid #2a2a2a;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #4da3ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #2a2a2a;
+      margin-top: 40px;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Nicholas Suntjens</h1>
-<p>Engineering Student @ UBC</p>
+<header>
+  <h1>Nicholas Suntjens</h1>
+  <p>Engineering Student @ UBC</p>
+</header>
 
-<h2>Projects</h2>
-<ul>
-  <li>Project 1 – description</li>
-  <li>Project 2 – description</li>
-</ul>
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<h2>Contact</h2>
-<p>suntjensnicholas@gmail.com</p>
+<section id="about">
+  <h2>About</h2>
+  <div class="card">
+    <p>
+      I am an engineering student at UBC interested in problem-solving, design, and building practical systems.
+      I enjoy working on technical projects that combine creativity with engineering fundamentals.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Project 1</h3>
+    <p>Short description of what the project does, tools used, and what you learned.</p>
+  </div>
+
+  <div class="card">
+    <h3>Project 2</h3>
+    <p>Short description of another project. Add GitHub links or demos here.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+
+  <div class="card">
+    <h3>Position Title – Company</h3>
+    <p>Describe responsibilities, technical skills, and impact.</p>
+  </div>
+
+  <div class="card">
+    <h3>Previous Role – Company</h3>
+    <p>Can include part-time work, volunteering, or leadership roles.</p>
+  </div>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+
+  <div class="card">
+    <p>Download my resume below:</p>
+    <a class="btn" href="resume.pdf" target="_blank">View Resume</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="card">
+    <p>Email: <a href="mailto:suntjensnicholas@gmail.com">suntjensnicholas@gmail.com</a></p>
+    <p>LinkedIn: 
+      <a href="https://www.linkedin.com/in/nicholas-suntjens-4928b6311" target="_blank">
+        linkedin.com/in/nicholas-suntjens
+      </a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Nicholas Suntjens | Built with GitHub Pages
+</footer>
 
 </body>
 </html>
