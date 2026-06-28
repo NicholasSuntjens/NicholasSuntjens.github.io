@@ -8,16 +8,16 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #e6e6e6;
+      font-family: Glegoo, sans-serif;
+      background: #080808;
+      color: #f5f5f5;
     }
 
     header {
-      background: #151515;
+      background: #0b0b0b;
       padding: 50px 20px;
       text-align: center;
-      border-bottom: 1px solid #2a2a2a;
+      border-bottom: 1px solid #303030;
     }
 
     header h1 {
@@ -48,7 +48,7 @@
     }
 
     nav a:hover {
-      color: #4da3ff;
+      color: #ffffff;
     }
 
     section {
@@ -58,19 +58,21 @@
     }
 
     h2 {
-      border-left: 4px solid #4da3ff;
+      border-left: 4px solid #ffffff;
       padding-left: 10px;
       margin-bottom: 20px;
       font-size: 28px;
     }
 
     .card {
-      background: #161616;
+      background: #101010;
       padding: 20px;
       margin: 15px 0;
       border-radius: 10px;
-      border: 1px solid #2a2a2a;
+      border: 1px solid #3a3a3a;
       transition: transform 0.2s ease;
+      box-shadow:
+        0 0 20 px rgba(255,255,255,.03);
     }
 
     .card:hover {
@@ -89,24 +91,37 @@
     }
 
     a {
-      color: #4da3ff;
+      color: #d9d9d9;
       text-decoration: none;
     }
 
     a:hover {
-      text-decoration: underline;
+      color:white;
     }
 
     .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      background: #4da3ff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 6px;
-      margin-top: 10px;
-      font-weight: bold;
-    }
+
+background:#efefef;
+
+color:black;
+
+border-radius:4px;
+
+transition:.2s;
+}
+
+.btn:hover{
+
+background:white;
+
+transform:translateY(-2px);
+
+}
+
+    ::selection{
+background:white;
+color:black;
+}
 
     html {
       scroll-behavior: smooth;
