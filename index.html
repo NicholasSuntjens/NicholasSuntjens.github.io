@@ -94,6 +94,14 @@
     
     }
 
+      nav span{
+
+      color:
+      
+      rgba(255,255,255,.15);
+      
+      }
+
     nav a {
       color: #e6e6e6;
       text-decoration: none;
@@ -150,23 +158,49 @@
     
     .overview-card{
     
-      display:grid;
+    display:grid;
     
-      grid-template-columns:2fr 1fr;
+    grid-template-columns:
+    2fr 1fr;
     
-      gap:40px;
+    gap:50px;
     
-      align-items:center;
-
-      @media(max-width:800px){
-
-  .overview-card{
-
-    grid-template-columns:1fr;
-
-  }
-
-}
+    align-items:center;
+    
+    }
+    
+    .overview-card > div:last-child{
+    
+    border-left:
+    1px solid rgba(255,255,255,.10);
+    
+    padding-left:40px;
+    
+    }
+    
+    @media(max-width:800px){
+    
+    .overview-card{
+    
+    grid-template-columns:
+    1fr;
+    
+    }
+    
+    .overview-card > div:last-child{
+    
+    border-left:none;
+    
+    padding-left:0;
+    
+    padding-top:20px;
+    
+    border-top:
+    1px solid rgba(255,255,255,.10);
+    
+    }
+    
+    }
     
     }
 
@@ -201,31 +235,71 @@
       opacity:.75;
     }
 
- .btn{
+    .btn{
+    
+    display:inline-block;
+    
+    background:white;
+    
+    color:black;
+    
+    padding:12px 18px;
+    
+    border-radius:6px;
+    
+    font-weight:700;
+    
+    border:
+    1px solid white;
+    
+    transition:.2s;
+    
+    }
+    
+        .btn:hover{
+        
+        background:#e5e5e5;
+        
+        transform:
+        translateY(-2px);
+        
+        }
 
-background:white;
+            .contact-links{
+        
+        display:flex;
+        
+        flex-direction:column;
+        
+        gap:14px;
+        
+        }
+        
+        .contact-links a{
+        
+        display:flex;
+        
+        align-items:center;
+        
+        gap:10px;
+        
+        }
+        
+        .contact-links img{
+        
+        width:18px;
+        
+        height:18px;
+        
+        opacity:.9;
+        
+        }
 
-color:black;
 
-padding:12px 18px;
-
-border-radius:999px;
-
-font-weight:700;
-
-}
-
-.btn:hover{
-
-background:#e5e5e5;
-
-}
-
-
-    ::selection{
-background:white;
-color:black;
-}
+                  ::selection{
+              background:white;
+              color:black;
+              }
 
     html {
       scroll-behavior: smooth;
@@ -260,11 +334,25 @@ color:black;
 </header>
 
 <nav>
-  <a href="#top">Top</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#cad">CAD Projects</a>
-  <a href="#academic">Academic Project Highlights</a>
+    
+    <a href="#top">Top</a>
+    
+        <span>|</span>
+    
+    <a href="#experience">Experience</a>
+    
+        <span>|</span>
+    
+    <a href="#projects">Projects</a>
+    
+        <span>|</span>
+    
+    <a href="#cad">CAD Projects</a>
+    
+        <span>|</span>
+    
+    <a href="#academic">Academic</a>
+
 </nav>
 
 <!-- ========== TOP SUMMARY ========== -->
@@ -290,30 +378,42 @@ color:black;
     </div>
     
     <div>
-    
+
     <h3>Contact</h3>
     
-    <p>
-    <a href="mailto:suntjensnicholas@gmail.com">
-    Email
-    </a>
-    </p>
-    
-    <p>
-    <a href="https://www.linkedin.com/in/nicholas-suntjens-4928b6311" target="_blank">
-    LinkedIn
-    </a>
-    </p>
-    
-    <a
-    class="btn"
-    href="NicholasSuntjensResumeNew.pdf"
-    target="_blank">
-    
-    View Resume
-    
-    </a>
-    
+        <div class="contact-links">
+        
+        <a href="mailto:suntjensnicholas@gmail.com">
+        
+        <img src="images/email.svg">
+        
+        Email
+        
+        </a>
+        
+        <a
+        href="https://www.linkedin.com/in/nicholas-suntjens-4928b6311"
+        target="_blank">
+        
+        <img src="images/linkedin.svg">
+        
+        LinkedIn
+        
+        </a>
+        
+        </div>
+        
+        <br>
+        
+        <a
+        class="btn"
+        href="NicholasSuntjensResumeNew.pdf"
+        target="_blank">
+        
+        View Resume
+        
+        </a>
+        
     </div>
     
     </div>
