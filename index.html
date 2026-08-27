@@ -243,6 +243,23 @@
     .skills-grid .card {
       margin: 0;
     }
+
+    .skills-grid ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+    
+    .skills-grid li {
+      margin: 10px 0;
+    }
+    
+    .skills-grid li::before {
+      content: "■";
+      font-size: 7px;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
     
     @media(max-width:800px){
       .skills-grid {
@@ -750,9 +767,7 @@
   </details>
     
 </section>
-
-
-  
+ 
 
 <!-- ======Technical Skills====== -->
   <section id="technicalskills">
@@ -761,30 +776,30 @@
   <div class="skills-grid">
 
     <div class="card">
-      <h3>Design</h3>
-      <p>
-        / SolidWorks<br>
-        / AUTOCAD<br>
-        / Technical Drawings
-      </p>
+      <h3>/ Design</h3>
+      <ul>
+        <li>Solidworks</li>
+        <li>AUTOCAD</li>
+        <li>Technical Drawings</li>
+      </ul>
     </div>
 
     <div class="card">
-      <h3>Manufacturing</h3>
-      <p>
-        / 3D Printing<br>
-        / Fabrication<br>
-        / Assembly
-      </p>
+      <h3>/ Manufacturing</h3>
+      <ul>
+        <li>3D Printing</li>
+        <li>Fabrication</li>
+        <li>Assembly</li>
+      </ul>
     </div>
 
     <div class="card">
-      <h3>Programming & Software</h3>
-      <p>
-        / C/C++<br>
-        / HTML/CSS<br>
-        / MATLAB
-      </p>
+      <h3>/ Programming & Software</h3>
+      <ul>
+        <li>C/C++</li>
+        <li>HTML/CSS</li>
+        <li>MATLAB</li>
+      </ul>
     </div>
 
   </div>
