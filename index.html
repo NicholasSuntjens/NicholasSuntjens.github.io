@@ -225,6 +225,22 @@
       border: 1px solid #ffffff18;
     }
 
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    
+    .skills-grid .card {
+      margin: 0;
+    }
+    
+    @media(max-width:800px){
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     a {
       color: #f0f0f0;
       text-decoration: none;
@@ -382,7 +398,11 @@
 
         <span>|</span>
     
-    <a href="#academic">Academic Projects</a>
+    <a href="#academic"> Academic Projects </a>
+
+        <span>|</span>
+
+    <a href="#technicalskills"> Technical Skills </a>
 
 </nav>
 
@@ -584,7 +604,47 @@
   </div>
 </section>
 
- 
+
+  
+
+<!-- ======Technical Skills====== -->
+  <section id="technicalskills">
+  <h2>Technical Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="card">
+      <h3>Design</h3>
+      <p>
+        SolidWorks<br>
+        AUTOCAD<br>
+        Technical Drawings
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Manufacturing</h3>
+      <p>
+        3D Printing<br>
+        Fabrication<br>
+        Assembly
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Programming & Software</h3>
+      <p>
+        C/C++<br>
+        HTML/CSS<br>
+        MATLAB
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    
+  
   
 <footer>
   © 2026 Nicholas Suntjens | Built with GitHub Pages
