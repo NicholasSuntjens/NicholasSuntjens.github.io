@@ -341,6 +341,44 @@
               color:black;
               }
 
+    .project-details {
+      background: #111111;
+      border: 1px solid #ffffff12;
+      border-radius: 14px;
+      margin: 15px 0;
+      overflow: hidden;
+      transition: .2s;
+    }
+    
+    .project-details summary {
+      cursor: pointer;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      list-style: none;
+    }
+    
+    .project-details summary::-webkit-details-marker {
+      display: none;
+    }
+    
+    .project-details summary::before {
+      content: "▸";
+      margin-right: 12px;
+    }
+    
+    .project-details[open] summary::before {
+      content: "▾";
+    }
+    
+    .project-details summary:hover {
+      background: #181818;
+    }
+    
+    .project-content {
+      padding: 0 20px 20px 20px;
+    }
+    
     html {
       scroll-behavior: smooth;
     }
@@ -469,12 +507,12 @@
         
         </a>
         
-    </div>
+      </div>
     
     </div>
 </section>
 
-<!--  
+<!--  NOTE: if i choose to include this section, update it to have drop downs
              ========== EXPERIENCE ==========
             <section id="experience">
               <h2>Experience</h2>
@@ -504,7 +542,8 @@
                 </p>
               </div>
 -->
-<!--
+  
+<!--   NOTE: if i choose to include this section, update it to have drop downs
   ========== DESIGN TEAM ==========
 <section id="designteam">
   <h2>Design Team</h2>
@@ -529,53 +568,122 @@
 <section id="projects">
   <h2>Personal Projects</h2>
 
-  <div class="card">
-    <h3>Motorcycle</h3>
-    <img src="images/project1.png" alt="Project 1">
-    <p>Description of engineering project, tools used, and outcomes.</p>
-  </div>
+  
+  <details class="project-details">
+    
+    <summary>Motorcycle</summary>
+    
+    <div class="project-content">
+  
+      <img src="images/project1.png" alt="Motorcycle project">
+  
+      <p>
+        Description of engineering project, tools used, and outcomes.
+      </p>
+  
+    </div>
+    
+  </details>
 
-  <div class="card">
-    <h3>Model plane</h3>
-    <img src="images/project2.png" alt="Project 2">
-    <p>Description of another technical project.</p>
-  </div>
+
+  <details class="project-details">
+
+    <summary>Model Plane</summary>
+
+    <div class="project-content">
+      
+    <img src="images/project2.png" alt="Model Plane Project">
+      
+    <p>
+      Description of another technical project.
+    </p>
+      
+    </div>
+
+  </details>
+    
 </section>  
 
 <!-- ========== CAD PROJECTS ========== -->
 <section id="cad">
   <h2>CAD Projects</h2>
 
-  <div class="card">
-    <h3>Early CAD Projects</h3>
-    <img src="images/cad1.png" alt="CAD Project 1">
-    <p>description</p>
-    <a href="images/cad1.png" target="_blank">View Full Image</a>
-  </div>
+  <details class="project-details">
+    
+    <summary>Early Cad Projects</summary>
 
-  <div class="card">
-    <h3>Further Developing CAD Skills</h3>
+    <div class="project-content">
+
+    <img src="images/cad1.png" alt="CAD Project 1">
+      
+    <p>
+      description
+    </p>
+      
+    <a href="images/cad1.png" target="_blank">View Full Image</a>
+      
+    </div>
+
+  </details>
+  
+
+  <details class="project-details">
+
+    <summary>Further Developing CAD Skills</summary>
+
+    <div class="project-content">
+      
     <img src="images/cad2.png" alt="CAD Project 2">
-    <p>Description here</p>
+      
+    <p>
+      Description here
+    </p>
+      
     <a href="images/cad2.png" target="_blank">View Full Image</a>
-  </div>
+      
+    </div>
+
+  </details>
+  
 </section>
 
   <!-- ========== AUTOMOTIVE PROJECTS ========== -->
 <section id="automotive">
   <h2>Automotive Projects</h2>
 
-  <div class="card">
-    <h3>MK4.5 Volkswagen Golf Restoration</h3>
-    <img src="images/project1.png" alt="Project 1">
-    <p>Description of engineering project, tools used, and outcomes.</p>
-  </div>
+<details class="project-details">
 
-  <div class="card">
-    <h3>Dodge Dart PF Daily Driver</h3>
+  <summary>MK4.5 Volkswagen Golf Restoration</summary>
+
+    <div class="project-content">
+      
+    <img src="images/project1.png" alt="Project 1">
+      
+    <p>
+      Description of engineering project, tools used, and outcomes.
+    </p>
+      
+    </div>
+  
+  </details>
+
+
+  <details class="project-details">
+  
+    <summary>Dodge Dart PF Daily Driver</summary>
+  
+    <div class="project-content">
+      
     <img src="images/project2.png" alt="Project 2">
-    <p>Description of another technical project.</p>
-  </div>
+      
+    <p>
+      Description of another technical project.
+    </p>
+      
+    </div>
+  
+  </details>
+    
 </section>  
 
 
@@ -584,26 +692,56 @@
   <section id="academic">
   <h2>Academic Project Highlights</h2>
 
-  <div class="card">
-    <h3>Module 3</h3>
+  <details class="project-details">
+
+    <summary>Designing an Adaptive Device</summary>
+
+    <div class="project-content">
+
     <img src="images/cad1.png" alt="Module 3 Cad Product">
-    <p>module 3 cuz its related to manu </p>
-    <a href="images/cad1.png" target="_blank">View Full Image</a>
-  </div>
+      
+    <p>
+      module 3 cuz its related to manu
+    </p>
+      
+    </div>
 
-  <div class="card">
-    <h3>Module 4</h3>
+  </details>
+
+
+  <details class="project-details">
+
+    <summary>Building an Autonomous Claw</summary>
+
+    <div class="project-content">
+
     <img src="images/cad1.png" alt="Module 4 Autonomous Claw">
-    <p>module 4 claw</p>
-    <a href="images/cad1.png" target="_blank">View Full Image</a>
+      
+    <p>
+      module 4 claw
+    </p>
+      
+    </div>
+
+  </details>
+
+
+  <details class="project-details">
+
+    <summary>Simulating a Rainwater Harvesting System</summary>
+
+    <div class="project-content">
+  
+    <img src="images/cad2.png" alt="Module 7 Excel Example">
+      
+    <p>
+      module 7 excel
+    </p>
+   
   </div>
 
-  <div class="card">
-    <h3>Module___</h3>
-    <img src="images/cad2.png" alt="Module 7 Excel Example">
-    <p>module 7 excel</p>
-    <a href="images/cad2.png" target="_blank">View Full Image</a>
-  </div>
+  </details>
+    
 </section>
 
 
@@ -646,7 +784,6 @@
 </section>
 -->
     
-  
   
 <footer>
   © 2026 Nicholas Suntjens | Built with GitHub Pages
