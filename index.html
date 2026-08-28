@@ -402,6 +402,68 @@
     .project-content {
       padding: 0 20px 20px 20px;
     }
+
+    .project-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    
+    .project-layout img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ffffff18;
+    }
+    
+    .project-description {
+      border-left: 1px solid rgba(255,255,255,.10);
+      padding-left: 30px;
+    }
+    
+    @media(max-width:800px){
+      .project-layout {
+        grid-template-columns: 1fr;
+      }
+    
+      .project-description {
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,.10);
+        padding-left: 0;
+        padding-top: 20px;
+      }
+    }
+    
+      .cad-layout {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 30px;
+        align-items: center;
+      }
+      
+      .cad-layout img {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #ffffff18;
+      }
+      
+      .cad-description {
+        border-left: 1px solid rgba(255,255,255,.10);
+        padding-left: 30px;
+      }
+      
+      @media(max-width:800px){
+        .cad-layout {
+          grid-template-columns: 1fr;
+        }
+      
+        .cad-description {
+          border-left: none;
+          border-top: 1px solid rgba(255,255,255,.10);
+          padding-left: 0;
+          padding-top: 20px;
+        }
+      }
     
     html {
       scroll-behavior: smooth;
@@ -598,13 +660,21 @@
     <summary>Motorcycle</summary>
     
     <div class="project-content">
-  
-      <img src="images/project1.png" alt="Motorcycle project">
-  
-      <p>
-        Description of engineering project, tools used, and outcomes.
-      </p>
-  
+
+      <div class="project-layout">
+      
+        <img src="images/project1.png" alt="Motorcycle project">
+
+        <div class="project-description">
+        
+        <p>
+          Description of engineering project, tools used, and outcomes.
+        </p>
+
+        </div>
+
+      </div>
+      
     </div>
     
   </details>
@@ -615,12 +685,20 @@
     <summary>Model Plane</summary>
 
     <div class="project-content">
+    
+      <div class="project-layout">
       
-    <img src="images/project2.png" alt="Model Plane Project">
-      
-    <p>
-      Description of another technical project.
-    </p>
+        <img src="images/project2.png" alt="Model Plane Project">
+        
+        <div class="project-description">
+    
+        <p>
+          Description of another technical project.
+        </p>
+
+        </div>
+
+      </div>
       
     </div>
 
@@ -638,14 +716,22 @@
 
     <div class="project-content">
 
-    <img src="images/cad1.png" alt="CAD Project 1">
+    <div class="cad-layout">
       
-    <p>
-      description
-    </p>
+      <img src="images/cad1.png" alt="CAD Project 1">
+
+      <div class="cad-description">
       
-    <a href="images/cad1.png" target="_blank">View Full Image</a>
+      <p>
+        asdfgh description
+      </p>
       
+      <a href="images/cad1.png" target="_blank">View Full Image</a>
+
+      </div>
+
+      </div>
+        
     </div>
 
   </details>
@@ -656,15 +742,23 @@
     <summary>Further Developing CAD Skills</summary>
 
     <div class="project-content">
+
+      <div class="cad-layout">
       
-    <img src="images/cad2.png" alt="CAD Project 2">
-      
-    <p>
-      Description here
-    </p>
-      
-    <a href="images/cad2.png" target="_blank">View Full Image</a>
-      
+      <img src="images/cad2.png" alt="CAD Project 2">
+
+      <div class="cad-description">
+              
+      <p>
+        Description here
+      </p>
+        
+      <a href="images/cad2.png" target="_blank">View Full Image</a>
+
+      </div>
+
+      </div>
+        
     </div>
 
   </details>
@@ -680,15 +774,23 @@
   <summary>MK4.5 Volkswagen Golf Restoration</summary>
 
     <div class="project-content">
+
+      <div class="project-layout">
       
-    <img src="images/project1.png" alt="Project 1">
+      <img src="images/project1.png" alt="Project 1">
+
+      <div class="project-description">
+        
+      <p>
+        Description of engineering project, tools used, and outcomes.
+      </p>
       
-    <p>
-      Description of engineering project, tools used, and outcomes.
-    </p>
-      
+      </div>
+
+      </div>
+
     </div>
-  
+          
   </details>
 
 
@@ -696,16 +798,24 @@
   
     <summary>Dodge Dart PF Daily Driver</summary>
   
-    <div class="project-content">
+    <div class="project-content">\
+
+      <div class="project-layout">
       
-    <img src="images/project2.png" alt="Project 2">
+      <img src="images/project2.png" alt="Project 2">
+
+      <div class="project-description">
+        
+      <p>
+        Description of another technical project.
+      </p>
       
-    <p>
-      Description of another technical project.
-    </p>
-      
+      </div>
+
+      </div>
+
     </div>
-  
+      
   </details>
     
 </section>  
@@ -717,18 +827,26 @@
   <h2>Academic Project Highlights</h2>
 
   <details class="project-details">
-
+  
     <summary>Designing an Adaptive Device</summary>
 
     <div class="project-content">
+        
+      <div class="cad-layout">
+    
+      <img src="images/cad1.png" alt="Module 3 Cad Product">
 
-    <img src="images/cad1.png" alt="Module 3 Cad Product">
-      
-    <p>
-      module 3 cuz its related to manu
-    </p>
-      
-    </div>
+      <div class="cad-description">
+        
+      <p>
+        module 3 cuz its related to manu
+      </p>
+        
+      </div>
+
+      </div>
+
+    </div>  
 
   </details>
 
@@ -739,30 +857,46 @@
 
     <div class="project-content">
 
-    <img src="images/cad1.png" alt="Module 4 Autonomous Claw">
-      
-    <p>
-      module 4 claw
-    </p>
-      
+      <div class="cad-layout">
+
+      <img src="images/cad1.png" alt="Module 4 Autonomous Claw">
+
+      <div class="cad-description">
+        
+      <p>
+        module 4 claw
+      </p>
+        
+      </div>
+        
+      </div>
+
     </div>
-
+        
   </details>
-
+        
 
   <details class="project-details">
 
     <summary>Simulating a Rainwater Harvesting System</summary>
 
     <div class="project-content">
+
+    <div class="cad-layout">
   
-    <img src="images/cad2.png" alt="Module 7 Excel Example">
+      <img src="images/cad2.png" alt="Module 7 Excel Example">
+
+      <div class="cad-description">
       
-    <p>
-      module 7 excel
-    </p>
+      <p>
+        module 7 excel
+      </p>
    
-  </div>
+      </div>
+
+      </div>
+
+    </div>  
 
   </details>
     
