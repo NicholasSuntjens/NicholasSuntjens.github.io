@@ -1,6 +1,6 @@
 ## / Nicholas Suntjens | Portfolio
 
-Digital portfolio for Nicholas Suntjens, a Canadian Manufacturing Engineering student at UBC, 2025-2030.
+Digital portfolio for Nicholas Suntjens, a Manufacturing Engineering student at UBC, 2025-2030.
 
 ## / About
 
