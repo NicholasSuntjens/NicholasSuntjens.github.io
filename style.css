@@ -421,6 +421,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 30px;
       align-items: center;
+      margin-bottom:15px; /*Note: spacing between parts of project*/
     }
     
     .project-layout img {
