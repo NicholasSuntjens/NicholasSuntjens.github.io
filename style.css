@@ -421,7 +421,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 30px;
       align-items: center;
-      margin-bottom:15px; /*Note: spacing between parts of project*/
+      margin-bottom:15px; /*Note: spacing between project sections*/
     }
     
     .project-layout img {
@@ -467,7 +467,7 @@
         grid-template-columns: 1.2fr 1fr;
         gap: 30px;
         align-items: center;
-        margin-bottom: 25px; /*Note: this is the spacing between images within each section*/
+        margin-bottom: 25px; /*Note: spacing between project sections*/
       }
       
       .cad-layout img {
