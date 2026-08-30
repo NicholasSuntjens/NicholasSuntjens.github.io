@@ -80,7 +80,7 @@
     
     justify-content:center;
     
-    gap:50px;
+    gap:50px; /* note this should be changed if I add more sections, so that everything fits */
     
     background:#050505;
     
@@ -118,6 +118,27 @@
     0 0 10px rgba(255,255,255,.5);
     
     }
+
+   @media(max-width:800px){
+   
+     nav {
+       justify-content: flex-start;
+       gap: 25px;
+       overflow-x: auto;
+       white-space: nowrap;
+       padding: 15px 20px;
+     }
+   
+     nav a {
+       font-size: 13px;
+       flex-shrink: 0;
+     }
+   
+     nav span {
+       flex-shrink: 0;
+     }
+   
+   }
 
     section {
       max-width: 900px;
@@ -411,6 +432,8 @@
     .project-description {
       border-left: 1px solid rgba(255,255,255,.10);
       padding-left: 30px;
+      font-size: 14px;
+      line-height: 1.6;
     }
     
     @media(max-width:800px){
@@ -454,6 +477,8 @@
       .cad-description {
         border-left: 1px solid rgba(255,255,255,.10);
         padding-left: 30px;
+        font-size: 14px;
+        line-height: 1.6;
       }
       
       @media(max-width:800px){
