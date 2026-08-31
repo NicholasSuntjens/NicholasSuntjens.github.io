@@ -246,7 +246,7 @@
       border-radius: 10px;
       border: 1px solid #ffffff18;
     }
-
+/*technical skills section css */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -467,6 +467,7 @@
       }
     }
 
+/*two images side by side format */
           .project-images {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -477,6 +478,49 @@
         width: 100%;
         border-radius: 10px;
         border: 1px solid #ffffff18;
+      }
+/* four images in one row format */
+      .project-images-four {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+      
+      .project-images-four img {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #ffffff18;
+      }
+      
+/* description underneath four images section */
+      .project-description-four {
+        border-top: 1px solid rgba(255,255,255,.10);
+        border-bottom: 1px solid rgba(255,255,255,.10);
+        padding: 15px 0;
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      
+      .project-description-four p {
+        margin: 0;
+      }
+      
+      /* mobile */
+      @media(max-width:800px){
+      
+        .project-images-four {
+          grid-template-columns: 1fr 1fr;
+          gap: 15px;
+        }
+      
+        .project-description-four {
+          padding: 15px 0;
+          font-size: 14px;
+          line-height: 1.6;
+        }
+      
       }
     
       .cad-layout {
