@@ -394,7 +394,7 @@
               background:white;
               color:black;
               }
-
+/*regular project section formatting */
     .project-details {
       background: #111111;
       border: 1px solid #ffffff12;
@@ -468,13 +468,13 @@
     }
 
 /*two images side by side format */
-          .project-images {
+          .project-images-two {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
       }
       
-      .project-images img {
+      .project-images-two img {
         width: 100%;
         border-radius: 10px;
         border: 1px solid #ffffff18;
@@ -507,7 +507,7 @@
         margin: 0;
       }
       
-      /* mobile */
+      /* mobile 4 images */
       @media(max-width:800px){
       
         .project-images-four {
@@ -522,7 +522,7 @@
         }
       
       }
-    
+ /*cad section formating*/   
       .cad-layout {
         display: grid;
         grid-template-columns: 1.2fr 1fr;
