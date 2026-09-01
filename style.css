@@ -593,6 +593,17 @@
         }
       }
 
+/*image caption stuff */
+   .image-caption {
+       text-align: left;
+   }
+   
+   .image-caption p {
+       margin: 8px 0 0;
+       font-size: 12px;
+       color: #aaa;
+   }
+
     html {
       scroll-behavior: smooth;
     }
