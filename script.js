@@ -1,5 +1,5 @@
 function matchImageHeights() {
-  document.querySelectorAll('.project-images-two, .project-images-four').forEach(group => {
+  document.querySelectorAll('.project-images-two, .project-images-three, .project-images-four').forEach(group => {
 
     const images = [...group.querySelectorAll('img')];
 
