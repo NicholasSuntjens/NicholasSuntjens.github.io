@@ -640,7 +640,8 @@
 
 /*small image format class*/
    .small-image img {
-     height: 50%;
+     height: 300px;
+     width: auto;
      display: block;
      margin: 0 auto;
    }
