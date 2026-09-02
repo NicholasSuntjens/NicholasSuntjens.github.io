@@ -524,13 +524,13 @@
       
       }
 
-      /*makes the images in the two and four format sections the same height*/
-
+/*to help with height and spacing*/
       .project-images-two img,
       .project-images-four img {
         width: 100%;
-        height: 250px;
-        object-fit: contain;
+        height: auto;
+        object-fit: initial;
+        justify-self: center;
       }
 
 
